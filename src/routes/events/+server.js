@@ -43,6 +43,10 @@ export function POST({ request }) {
 			//             }
 			//         }
 			// });
+
+			return function cancel() {
+				console.log('Stream canceled.');
+			};
 		}
 	});
 }
